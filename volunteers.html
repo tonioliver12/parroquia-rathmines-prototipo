@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volunteers Needed — Rathmines Parish</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div>
+        <div class="brand-name">Mary Immaculate,<br>Refuge of Sinners</div>
+        <div class="brand-sub">RATHMINES · ARCHDIOCESE OF DUBLIN</div>
+      </div>
+    </div>
+    <ul>
+      <li><a href="rathmines-parroquia-prototipo.html#rhythm">Mass Times</a></li>
+      <li><a href="rathmines-parroquia-prototipo.html#story">Our Story</a></li>
+      <li><a href="rathmines-parroquia-prototipo.html#sacraments">Sacraments</a></li>
+      <li><a href="rathmines-parroquia-prototipo.html#notices">Notices</a></li>
+      <li><a href="rathmines-parroquia-prototipo.html#visit">Visit</a></li>
+    </ul>
+    <a class="nav-cta" href="rathmines-parroquia-prototipo.html#give">Donate</a>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap">
+    <a class="breadcrumb" href="rathmines-parroquia-prototipo.html#notices">← Back to notices</a>
+    <h1 style="margin-top:18px;">Volunteers needed<br>— get involved.</h1>
+    <p>Volunteers are indispensable to the life of our parish partnership. All baptised people are called by God to minister — there's a role here for whatever time and skills you can offer.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="content-block" data-reveal>
+      <p>Rathmines Parish is blessed to have so many volunteers in various roles and ministries. New volunteers are always welcome to join our team, whether you're looking to give an hour a month or take on a regular ministry.</p>
+    </div>
+
+    <div class="group-columns" data-reveal>
+      <div class="group-col">
+        <h3>Service</h3>
+        <ul>
+          <li>Eucharistic Ministers</li>
+          <li>Readers — Ministers of the Word</li>
+          <li>Eucharistic Adoration Group</li>
+          <li>Liturgy Group</li>
+          <li>Sacristans</li>
+          <li>Church Cleaners</li>
+          <li>Collectors &amp; Counters</li>
+          <li>Baptism Team</li>
+          <li>Funeral Ministry Team</li>
+          <li>Family Mass Group</li>
+          <li>RCIA — Rite of Christian Initiation of Adults</li>
+          <li>Morning Prayer Group</li>
+        </ul>
+      </div>
+      <div class="group-col">
+        <h3>Music</h3>
+        <ul>
+          <li>International Music Group</li>
+          <li>Rathmines Folk Group</li>
+        </ul>
+      </div>
+      <div class="group-col">
+        <h3>Outreach &amp; Ministry</h3>
+        <ul>
+          <li>Rathmines International Group</li>
+          <li>Bethany Support Group</li>
+          <li>Legion of Mary</li>
+          <li>Crosscare</li>
+          <li>St Vincent de Paul Society</li>
+          <li>Pioneers Society</li>
+          <li>Pax Christi</li>
+          <li>St Joseph's Young Priests Society</li>
+          <li>Active Retirement Group</li>
+          <li>Equipes Notre-Dame</li>
+          <li>ACCORD — Relationship Counselling</li>
+          <li>World Missions Ireland</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cta-box" data-reveal style="margin-top:56px;">
+      <h3>How to apply</h3>
+      <p>Download and complete the Expression of Interest Volunteer Form, and email it to the parish office. You're invited to consider sharing your skills, whatever they may be — practical, musical, pastoral, or administrative.</p>
+      <p style="margin-top:16px;"><a class="btn-primary" href="#" style="display:inline-block;">Download Volunteer Form →</a></p>
+      <p style="margin-top:20px; font-size:0.86rem; color:#5b5648;">
+        Email <a href="mailto:secretary@rathminesparish.com" style="color:var(--burgundy); text-decoration:underline;">secretary@rathminesparish.com</a>
+        or call <a href="tel:+35314971531" style="color:var(--burgundy); text-decoration:underline;">01 497 1531</a> with any questions.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <div class="brand-name" style="font-family:'Cormorant Garamond',serif; font-size:1.25rem;">Rathmines Parish</div>
+      <p class="fine">Prototype redesign, built with publicly available information from the parish's own website. Registered Charity Number 20016166. Working in partnership with Rathgar Parish.</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="rathmines-parroquia-prototipo.html#rhythm">Mass Times</a></li>
+      <li><a href="rathmines-parroquia-prototipo.html#notices">Notices</a></li>
+      <li><a href="rathmines-parroquia-prototipo.html#visit">Visit</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  const items = document.querySelectorAll('[data-reveal]');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  items.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
